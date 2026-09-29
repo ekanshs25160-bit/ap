@@ -1,0 +1,14 @@
+generator client {
+    provider = "prisma-client-js"
+    output   = "../generated/prisma"
+}
+
+datasource db {
+    provider = "postgresql"
+    
+}
+
+model Assignment {
+    id Int @id @default(autoincrement())
+    title String
+}
